@@ -11,26 +11,28 @@
 </head>
 <body>
 
-    <header>
-        <nav>
-          <a href="/"><i class="fa-solid fa-puzzle-piece"></i></a>
-          <div class="menu">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-          </div>
-          <ul class="nav-list">
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#causas">Causas</a></li>
-            <li><a href="#graus">Graus</a></li>
-            <li><a href="#">Projeto</a></li>
-          </ul>
-        </nav>
+    <header id="header">
+        <div class="container">
+            <div class="flex">
+                <a href="#"><img src="assets/img/Logo 01.png" alt=""></a>
+                <nav>
+                    <ul>
+                        <li><a href="#sobre">HOME</a></li>
+                        <li><a href="#causas">CAUSAS</a></li>
+                        <li><a href="#graus">GRAUS</a></li>
+                        <li><a href="#">BLOG</a></li>
+                    </ul>
+                </nav>
+                <div class="btn-contato">
+                    <a href="#"><button>CONTATO</button></a>
+                </div>
+            </div><!--Flex-->
+        </div><!--Container-->
     </header><!--Fim Menu-->
 
     <section id="banner">
-        <img src="assets/img/hero.jpg" alt="">
-    </section><!--Fim banner-->
+        <img src="assets/img/pqe.png" alt="">
+    </section><!--Fim Banner-->
     
     <section id="sobre">
             <h2>Transtorno do Espectro Autista (TEA)</h2>
@@ -71,37 +73,43 @@
 
     <section id="graus">
         <h2>Graus</h2>
-        <div class="nvl-3">
-            <h3>Nível 3: severo (necessitam de maior suporte/apoio)</h3>
-            <p>
-                Diz respeito àqueles que apresentam um déficit considerado grave nas habilidades de comunicação verbais e não verbais.
-                Ou seja, não conseguem se comunicar sem contar com suporte. Com isso apresentam dificuldade nas interações sociais e tem 
-                cognição reduzida.Também possuem um perfil inflexível de comportamento, tendo dificuldade de lidar com mudanças.Tendem ao 
-                isolamento social, se não estimulados.
-            </p>
-        </div>
-        
-        <div class="nvl-2">
-            <h3>Nível 2: moderado (necessitam de suporte)</h3>
-            <p>
-                Semelhante às características descritas no nível 3, mas com menor intensidade no que cabe aos transtornos de comunicação 
-                e deficiência de linguagem.
-            </p>
-        </div>
-        
-        <div class="nvl-1">
-            <h3>Nível 1: leve (necessita de pouco suporte)</h3>
-            <p>
-                Com suporte, pode ter dificuldade para se comunicar, mas não é um limitante para interações sociais. Problemas de 
-                organização e planejamento impedem a independência.É importante saber que, embora estejam estabelecidos desta forma 
-                (níveis 1, 2 e 3), ainda não está bem claro de fato o que e sob quais circunstâncias pode ser compreendido o significado 
-                de “suporte”. Por exemplo: algumas pessoas com TEA desenvolvem bem em casa, mas precisam de ajuda na escola (onde as 
-                demandas são específicas e intensas). Outras pessoas o contrário.
-            </p>
+        <div class="container-graus">
+            <div class="nvl-3">
+                <div class="text-3">
+                    <h3>Nível 3: severo (necessitam de maior suporte/apoio)</h3>
+                    <p>
+                        Diz respeito àqueles que apresentam um déficit considerado grave nas habilidades de comunicação verbais e não verbais.
+                        Ou seja, não conseguem se comunicar sem contar com suporte. Com isso apresentam dificuldade nas interações sociais e tem 
+                        cognição reduzida.Também possuem um perfil inflexível de comportamento, tendo dificuldade de lidar com mudanças.Tendem ao 
+                        isolamento social, se não estimulados.
+                    </p>
+                </div>
+            </div>
+            <div class="nvl-2">
+                <div class="text-2">
+                    <h3>Nível 2: moderado (necessitam de suporte)</h3>
+                    <p>
+                        Semelhante às características descritas no nível 3, mas com menor intensidade no que cabe aos transtornos de comunicação 
+                        e deficiência de linguagem.
+                    </p>
+                </div>
+            </div>
+            <div class="nvl-1">
+                <div class="text-1">
+                    <h3>Nível 1: leve (necessita de pouco suporte)</h3>
+                    <p>
+                        Com suporte, pode ter dificuldade para se comunicar, mas não é um limitante para interações sociais. Problemas de 
+                        organização e planejamento impedem a independência.É importante saber que, embora estejam estabelecidos desta forma 
+                        (níveis 1, 2 e 3), ainda não está bem claro de fato o que e sob quais circunstâncias pode ser compreendido o significado 
+                        de “suporte”. Por exemplo: algumas pessoas com TEA desenvolvem bem em casa, mas precisam de ajuda na escola (onde as 
+                        demandas são específicas e intensas). Outras pessoas o contrário.
+                    </p>
+                </div> 
+            </div>
         </div>
         
     </section><!--Fim Graus-->
 
-   <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
