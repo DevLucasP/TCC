@@ -50,7 +50,7 @@ section {
     display: block;
     right: 0;
     background: #a82121;
-    transition:  width 0.3s ease, bg-color 0.3s ease;
+    transition:  width 0.5s ease, bg-color 0.5s ease;
 }
 
 .home:hover::after {
@@ -67,7 +67,7 @@ section {
     display: block;
     right: 0;
     background: #000;
-    transition:  width 0.3s ease, bg-color 0.3s ease;
+    transition:  width 0.5s ease, bg-color 0.5s ease;
 }
 
 .causas:hover::after {
@@ -84,7 +84,7 @@ section {
     display: block;
     right: 0;
     background: #000;
-    transition:  width 0.3s ease, bg-color 0.3s ease;
+    transition:  width 0.5s ease, bg-color 0.5s ease;
 }
 
 .graus:hover::after {
