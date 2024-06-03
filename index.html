@@ -11,36 +11,49 @@
     <title>Peças Que se Encaixam</title>
 </head>
 <body>
-
     <header>
-        <div class="container">
-            <div class="flex">
-                <a href="index.html">
-                  <h1>PqE<span style="color: #ff0000;">.</span></h1>
-                </a>
-                <nav>
-                  <ul class="nav-list">
-                    <li><a class="nav-link" href="#hero">Home</a></li>
-                    <li><a class="nav-link" href="#about">Sobre</a></li>
-                    <li><a class="nav-link" href="#events">Causas</a></li>
-                    <li><a class="nav-link" href="#menu">Caracteristicas</a></li>
-                    <li><a class="nav-link" href="#chefs">Graus</a></li>
-                    <li><a class="nav-link" href="#gallery">Tipos</a></li>
-                  </ul>
-                </nav>
-    
-                <div class="btn-contato">
-                    <a href="#"><button>CONTATO</button></a>
-                </div>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="#"><h1>PqE<span style="color: #a71113;">.</span></h1></a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" id="home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" id="about" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#" id="characteristics" class="nav-link">Características</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
             </div>
         </div>
     </header><!-- End Header -->
     
     <section id="hero">
-        <div class="hero-container">
-          <h1>Peças Que Encaixam</h1>
-          <span>Desenvolvedor Web | HTML5 | CSS3 | JavaScript</span>
-        </div>
+        <div class="container">
+            <img src="assets/img/res-img.png" alt="">
+            <div class="hero-text">
+              <h1>Peças Que Emcaixam</h1>
+              <p>Indulge in artisanal coffee delights. Crafted with passion, brewed with perfection.
+                Savor the Flavor!
+              </p>
+            </div>
+          </div>
     </section><!--Fim Hero-->
 
     <main id="main">
