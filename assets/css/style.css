@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 /* Reset CSS*/
 * {
@@ -17,21 +17,26 @@
 
 /* Cores */
 :root {
-    --bg-color: #ececec;
+    /* Background's*/
     --section-bg: #ececec;
-    --black-color: #000;
-    --white-color: #fff;
+    --hero-bg: #00649c;
+
+    /* Color's */
+    --black: #000;
+    --white: #fff;
+    --blue: #09014a;
+    --red: #a71113;
+    --yellow: #ffcf00;
 }
 
 /* Smooth scroll */
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 90px;
 }
 
 /* Geral */
 body {
-    background: var(--bg-color);
+    background: var(--white);
     overflow-x: hidden;
 }
 
@@ -49,6 +54,7 @@ section {
     overflow: hidden;
     padding: 80px 0;
     scroll-margin-top: 90px;
+    background: var(--white);
     overflow: clip;
 }
 
@@ -58,20 +64,21 @@ a {
 
 /* Header */
 header {
-    z-index: 9999;
-    position: absolute;
     width: 100%;
+    position: fixed;
     top: 0;
     left: 0;
+    z-index: 997;
+    height: 65px;
     background-color: #ebecf1;
     box-shadow: 0px 3px 10px #464646;
 }
 
 .nav-bar {
     display: flex;
-    height: 9vh;
-    justify-content: space-between;
+    height: 65px;
     padding: 1.5rem 6rem;
+    justify-content: space-between;
 }
 
 .logo {
@@ -108,7 +115,7 @@ header {
 .login-button button {
     border: none;
     padding: 10px;
-    top: 0;
+    margin: -30px 0;
     border-radius: 5px;
     background-color: #0187a7;
 }
@@ -122,6 +129,10 @@ header {
 
 .mobile-menu-icon {
     display: none;
+}
+
+.mobile-menu-icon i {
+    font-size: 26px;
 }
 
 .mobile-menu {
@@ -166,6 +177,7 @@ header {
     .open {
         display: block;
     }
+
 }
 
 .nav-link::after {
@@ -187,15 +199,19 @@ header {
 
 /* Hero Section */
 #hero {
-    background: #fff;
-}
-.container {
+    width: 100%;
     height: 600px;
+    background: var(--hero-bg);
+    background-size: cover;
+    position: relative;
+}
+
+.container {
     padding: 20px;
     margin-left: 40px;
     margin-right: 40px;
     display: flex;
-    background-color: #fff;
+    background: var(--hero-bg);
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
@@ -203,23 +219,24 @@ header {
 }
   
 .container img {
-    width: 600px;
-    height: 400px;
+    width: 750px;
+    height: 100%;
 }
   
 .hero-text {
     width: 80%;
 }
   
-.hero-text h1 {
-    font-size: 3.3rem;
-    margin-bottom: 12px;
-    color: #8b4513;
+.hero-text h2 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
 }
   
 .hero-text p {
-    font-size: 1.4rem;
-    margin-bottom: 12px;
+    font-size: 1.2rem;
+    color: var(--white);
 }
   
 @media (max-width: 884px) {
@@ -242,9 +259,60 @@ header {
     }
 }
 
+.p {
+    color: var(--blue);
+}
+
+.q {
+    color: var(--yellow);
+}
+
+.e {
+    color: var(--red);
+}
+
+/* Top Button*/
+#progress {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 70px;
+    width: 70px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+#progress-value {
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: #001a2e;
+}
+
+/* Wave Hero */
+.wave-hero {
+    width: 100%;
+    background: var(--white);
+    margin-top: 30px;
+    position: relative;
+}
+
+svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 /* Sobre */
 #sobre {
-    background: var(--section-bg);
     padding: 30px 30px 5% 30px;
     height: 100vh;
 }
@@ -283,7 +351,6 @@ header {
 
 /* Causas */
 #causas {
-    background: var(--section-bg);
     padding: 30px 30px 5% 30px;
     width: 100%;
     height: 100vh;
@@ -323,7 +390,6 @@ header {
 
 /* Graus*/
 #graus {
-    background: var(--section-bg);
     padding: 30px 30px 5% 30px;
     width: 100%;
     height: 100vh;
