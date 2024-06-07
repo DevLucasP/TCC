@@ -68,14 +68,14 @@ header {
     top: 0;
     left: 0;
     z-index: 997;
-    height: 65px;
+    height: 90px;
     background-color: #353538;
     box-shadow: 0px 3px 10px #464646;
 }
 
 .nav-bar {
     display: flex;
-    height: 65px;
+    height: 90px;
     padding: 1.5rem 6rem;
     justify-content: space-between;
 }
@@ -114,7 +114,6 @@ header {
 .login-button button {
     border: none;
     padding: 10px;
-    margin: -30px 0;
     border-radius: 5px;
     background-color: #0187a7;
 }
@@ -199,8 +198,9 @@ header {
 /* Hero Section */
 #hero {
     width: 100%;
-    height: 600px;
-    background: var(--hero-bg);
+    height: 660px;
+    background: url('https://turinha-static.pkds.it/blog/production/2017/02/11130024/cantigas-de-roda-1.jpg') center;
+    background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 
@@ -209,11 +209,11 @@ header {
 }
 
 .container {
-    padding: 20px 0 40px 0;
+    padding: 90px 0 40px 0;
     margin-left: 40px;
     margin-right: 40px;
     display: flex;
-    background: var(--hero-bg);
+    background: transparent;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
@@ -238,7 +238,7 @@ header {
   
 .hero-text p {
     font-size: 1.2rem;
-    color: var(--white);
+    color: #fff;
     margin-bottom: 70px;
 }
   
@@ -309,7 +309,7 @@ svg {
 
 /* Sobre */
 #sobre {
-    padding: 90px 30px 5% 30px;
+    padding: 69px 30px 5% 30px;
     margin-bottom: 90px;
     height: 590px;
 }
@@ -349,7 +349,7 @@ svg {
 
 /* Causas */
 #causas {
-    padding: 90px 30px 5% 30px;
+    padding: 69px 30px 5% 30px;
     margin-bottom: 90px;
     height: 590px;
 }
@@ -388,7 +388,7 @@ svg {
 
 /* Graus*/
 #graus {
-    padding: 90px 30px 5% 30px;
+    padding: 69px 30px 5% 30px;
     margin-bottom: 90px;
     height: 590px;
 }
