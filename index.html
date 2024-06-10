@@ -12,27 +12,26 @@
 </head>
 <body>
     <header>
-            <div class="flex">
-                <a href="#"><h1 style="color: #fff;">PqE<span style="color: #39b9da;">.</span></h1></a>
-                <nav class="nav-bar">
-                    <div class="nav-list">
-                        <ul>
-                            <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
-                            <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
-                            <li class="nav-item"><a href="#causas" class="nav-link">Causa</a></li>
-                            <li class="nav-item"><a href="#graus" class="nav-link">Graus</a></li>
-                        </ul>
-                    </div>
-                    <div class="mobile-menu-icon">
-                        <button onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
-                    </div>
-                </nav>
-                <div class="login-button">
-                    <button><a href="#">Contato</a></button>
-                </div>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="#"><h1>PqE<span style="color: #a71113;">.</span></h1></a>
             </div>
-            
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#causas" class="nav-link">Causa</a></li>
+                    <li class="nav-item"><a href="#graus" class="nav-link">Graus</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
 
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </nav>
         <div class="mobile-menu">
             <ul>
                 <li class="nav-item"><a href="#" class="nav-links">Início</a></li>
@@ -41,7 +40,7 @@
             </ul>
 
             <div class="login-button">
-                <button><a href="#">Contato</a></button>
+                <button><a href="#">Entrar</a></button>
             </div>
         </div>
     </header><!-- End Header -->
@@ -61,13 +60,10 @@
               </p>
             </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,224L48,229.3C96,235,192,245,
-            288,250.7C384,256,480,256,576,261.3C672,267,768,277,864,261.3C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,
-            320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,
-            320L0,320Z"></path></svg>
     </section><!--Fim Hero-->
 
-    <div id="sobre">
+    <main id="main">
+        <section id="sobre" class="sobre">
             <h2>Transtorno do Espectro Autista (TEA)</h2>
                 <p class="tex">
                     O Transtorno do Espectro do Autismo (TEA) ou autismo, é um transtorno do neurodesenvolvimento que traz prejuízos na 
@@ -87,61 +83,62 @@
                 causa ligada a alguma experiência negativa ou por consequência de má criação dos pais ou responsáveis. Mas, este conceito 
                 já foi mais do que refutado pela ciência.
             </p>
-    </div><!--Fim Sobre-->
+        </section><!--Fim Sobre-->
 
-    <div id="causas">
-            <h2>Causa do Autismo</h2>
-                <p>
-                    O autismo é um distúrbio do neurodesenvolvimento cuja etiologia ainda é desconhecida.Pesquisas mostram que não há 
-                    um fator único, mas sim a interação de componentes genéticos e ambientais.Uma pesquisa da USP cruzou dados de pacientes 
-                    e mostrou que a exposição da gestante a fatores ambientais e psicossociais (como estresse, exposição a produtos químicos 
-                    e perda de um ente querido, por exemplo) pode aumentar a possibilidade do desenvolvimento do autismo nos filhos.O doutorado, 
-                    realizado pela neurocientista Anita Brito, do Instituto de Ciências Biomédicas (ICB) da USP, em parceria com a Plataforma 
-                    Científica Pasteur (SSPU) da USP – recentemente transformada em Institut Pasteur de São Paulo –  e com o Instituto de 
-                    Psiquiatria (IPq) da Faculdade de Medicina da USP (FMUSP), investigou, pela primeira vez, a relação entre fatores 
-                    genéticos e ambientais e o Transtorno do Espectro Autista (TEA).
-                
-                    <img class="causas-img" src="assets/img/img.jpg" alt="">
-                </p>
-    </div><!--Fim Graus-->
+        <section id="causas" class="causa">
+                <h2>Causa do Autismo</h2>
+                    <p>
+                        O autismo é um distúrbio do neurodesenvolvimento cuja etiologia ainda é desconhecida.Pesquisas mostram que não há 
+                        um fator único, mas sim a interação de componentes genéticos e ambientais.Uma pesquisa da USP cruzou dados de pacientes 
+                        e mostrou que a exposição da gestante a fatores ambientais e psicossociais (como estresse, exposição a produtos químicos 
+                        e perda de um ente querido, por exemplo) pode aumentar a possibilidade do desenvolvimento do autismo nos filhos.O doutorado, 
+                        realizado pela neurocientista Anita Brito, do Instituto de Ciências Biomédicas (ICB) da USP, em parceria com a Plataforma 
+                        Científica Pasteur (SSPU) da USP – recentemente transformada em Institut Pasteur de São Paulo –  e com o Instituto de 
+                        Psiquiatria (IPq) da Faculdade de Medicina da USP (FMUSP), investigou, pela primeira vez, a relação entre fatores 
+                        genéticos e ambientais e o Transtorno do Espectro Autista (TEA).
+                    
+                        <img class="causas-img" src="assets/img/img.jpg" alt="">
+                    </p>
+        </section><!--Fim Graus-->
 
-    <div id="graus">
-            <h2>Graus</h2>
-            <div class="container-graus">
-                <div class="nvl-3">
-                    <div class="text-3">
-                        <h3>Nível 3: severo (necessitam de maior suporte/apoio)</h3>
-                        <p>
-                            Diz respeito àqueles que apresentam um déficit considerado grave nas habilidades de comunicação verbais e não verbais.
-                            Ou seja, não conseguem se comunicar sem contar com suporte. Com isso apresentam dificuldade nas interações sociais e tem 
-                            cognição reduzida.Também possuem um perfil inflexível de comportamento, tendo dificuldade de lidar com mudanças.Tendem ao 
-                            isolamento social, se não estimulados.
-                        </p>
+        <section id="graus" class="graus">
+                <h2>Graus</h2>
+                <div class="container-graus">
+                    <div class="nvl-3">
+                        <div class="text-3">
+                            <h3>Nível 3: severo (necessitam de maior suporte/apoio)</h3>
+                            <p>
+                                Diz respeito àqueles que apresentam um déficit considerado grave nas habilidades de comunicação verbais e não verbais.
+                                Ou seja, não conseguem se comunicar sem contar com suporte. Com isso apresentam dificuldade nas interações sociais e tem 
+                                cognição reduzida.Também possuem um perfil inflexível de comportamento, tendo dificuldade de lidar com mudanças.Tendem ao 
+                                isolamento social, se não estimulados.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="nvl-2">
+                        <div class="text-2">
+                            <h3>Nível 2: moderado (necessitam de suporte)</h3>
+                            <p>
+                                Semelhante às características descritas no nível 3, mas com menor intensidade no que cabe aos transtornos de comunicação 
+                                e deficiência de linguagem.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="nvl-1">
+                        <div class="text-1">
+                            <h3>Nível 1: leve (necessita de pouco suporte)</h3>
+                            <p>
+                                Com suporte, pode ter dificuldade para se comunicar, mas não é um limitante para interações sociais. Problemas de 
+                                organização e planejamento impedem a independência.É importante saber que, embora estejam estabelecidos desta forma 
+                                (níveis 1, 2 e 3), ainda não está bem claro de fato o que e sob quais circunstâncias pode ser compreendido o significado 
+                                de “suporte”. Por exemplo: algumas pessoas com TEA desenvolvem bem em casa, mas precisam de ajuda na escola (onde as 
+                                demandas são específicas e intensas). Outras pessoas o contrário.
+                            </p>
+                        </div> 
                     </div>
                 </div>
-                <div class="nvl-2">
-                    <div class="text-2">
-                        <h3>Nível 2: moderado (necessitam de suporte)</h3>
-                        <p>
-                            Semelhante às características descritas no nível 3, mas com menor intensidade no que cabe aos transtornos de comunicação 
-                            e deficiência de linguagem.
-                        </p>
-                    </div>
-                </div>
-                <div class="nvl-1">
-                    <div class="text-1">
-                        <h3>Nível 1: leve (necessita de pouco suporte)</h3>
-                        <p>
-                            Com suporte, pode ter dificuldade para se comunicar, mas não é um limitante para interações sociais. Problemas de 
-                            organização e planejamento impedem a independência.É importante saber que, embora estejam estabelecidos desta forma 
-                            (níveis 1, 2 e 3), ainda não está bem claro de fato o que e sob quais circunstâncias pode ser compreendido o significado 
-                            de “suporte”. Por exemplo: algumas pessoas com TEA desenvolvem bem em casa, mas precisam de ajuda na escola (onde as 
-                            demandas são específicas e intensas). Outras pessoas o contrário.
-                        </p>
-                    </div> 
-                </div>
-            </div>
-    </div><!--Fim Graus-->
+        </section><!--Fim Graus-->
+    </main>
         
     <script src="assets/js/main.js"></script>
 </body>

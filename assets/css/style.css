@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
+/*
+    RESOLUÇÃO PC ESCOLA: 1920X1080
+    RESOLUÇÃO PC FORUM: 1360X768
+*/
+
 /* Reset CSS*/
 * {
     margin: 0;
@@ -37,8 +42,8 @@ html {
 
 /* Geral */
 body {
-    background: var(--white);
-    overflow-x: hidden;
+    font-family: "Open Sans", sans-serif;
+    color: #272829;
 }
 
 h1,
@@ -47,14 +52,11 @@ h3,
 h4,
 h5,
 h6 {
-    color: #000;
-    font-family: var(--font-secondary);
+  font-family: "Raleway", sans-serif;
 }
 
 section {
-    overflow: hidden;
-    scroll-margin-top: 90px;
-    background: var(--white);
+    padding: 60px 0;
 }
 
 a {
@@ -78,12 +80,6 @@ header {
     height: 90px;
     padding: 1.5rem 6rem;
     justify-content: space-between;
-}
-
-.flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
 }
 
 .logo {
@@ -121,7 +117,7 @@ header {
     border: none;
     padding: 10px;
     border-radius: 5px;
-    background-color: #39b9da;
+    background-color: #0187a7;
 }
 
 .login-button button a {
@@ -137,14 +133,13 @@ header {
 
 .mobile-menu-icon i {
     font-size: 26px;
-    color: #39b9da;
 }
 
 .mobile-menu {
     display: none;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 730px) {
     .nav-bar {
         padding: 1.5rem 4rem;
     }
@@ -205,9 +200,8 @@ header {
 /* Hero Section */
 #hero {
     width: 100%;
-    height: 660px;
-    background: url('https://turinha-static.pkds.it/blog/production/2017/02/11130024/cantigas-de-roda-1.jpg') center;
-    background-repeat: no-repeat;
+    height: 100vh;
+    background: url('https://turinha-static.pkds.it/blog/production/2017/02/11130024/cantigas-de-roda-1.jpg') top center;
     background-size: cover;
     position: relative;
 
@@ -215,8 +209,21 @@ header {
     align-items: center;
 }
 
+#hero:before {
+    content: "";
+    background: rgba(5, 13, 24, 0.3);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
 .container {
     padding: 90px 0 40px 0;
+    position: absolute;
+    z-index: 994;
     margin-left: 40px;
     margin-right: 40px;
     display: flex;
@@ -249,7 +256,7 @@ header {
     margin-bottom: 70px;
 }
   
-@media (max-width: 760px) {
+@media (max-width: 884px) {
     .container {
       margin-top: 10px;
       flex-direction: column;
@@ -281,16 +288,10 @@ header {
     color: var(--red);
 }
 
-svg {
-    position: absolute;
-    bottom: 0;
-    color: #fff;
-    filter: drop-shadow(0px 3px 10px #464646);
-}
-
 /* Top Button*/
 #progress {
     position: fixed;
+    z-index: 99;
     bottom: 20px;
     right: 10px;
     height: 70px;
