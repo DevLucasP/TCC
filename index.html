@@ -12,26 +12,27 @@
 </head>
 <body>
     <header>
-        <nav class="nav-bar">
-            <div class="logo">
-                <a href="#"><h1>PqE<span style="color: #a71113;">.</span></h1></a>
+            <div class="flex">
+                <a href="#"><h1 style="color: #fff;">PqE<span style="color: #39b9da;">.</span></h1></a>
+                <nav class="nav-bar">
+                    <div class="nav-list">
+                        <ul>
+                            <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                            <li class="nav-item"><a href="#causas" class="nav-link">Causa</a></li>
+                            <li class="nav-item"><a href="#graus" class="nav-link">Graus</a></li>
+                        </ul>
+                    </div>
+                    <div class="mobile-menu-icon">
+                        <button onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
+                    </div>
+                </nav>
+                <div class="login-button">
+                    <button><a href="#">Contato</a></button>
+                </div>
             </div>
-            <div class="nav-list">
-                <ul>
-                    <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
-                    <li class="nav-item"><a href="#causas" class="nav-link">Causa</a></li>
-                    <li class="nav-item"><a href="#graus" class="nav-link">Graus</a></li>
-                </ul>
-            </div>
-            <div class="login-button">
-                <button><a href="#">Entrar</a></button>
-            </div>
+            
 
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
-            </div>
-        </nav>
         <div class="mobile-menu">
             <ul>
                 <li class="nav-item"><a href="#" class="nav-links">Início</a></li>
@@ -40,7 +41,7 @@
             </ul>
 
             <div class="login-button">
-                <button><a href="#">Entrar</a></button>
+                <button><a href="#">Contato</a></button>
             </div>
         </div>
     </header><!-- End Header -->

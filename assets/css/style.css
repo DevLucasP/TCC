@@ -80,6 +80,12 @@ header {
     justify-content: space-between;
 }
 
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -115,7 +121,7 @@ header {
     border: none;
     padding: 10px;
     border-radius: 5px;
-    background-color: #0187a7;
+    background-color: #39b9da;
 }
 
 .login-button button a {
@@ -131,13 +137,14 @@ header {
 
 .mobile-menu-icon i {
     font-size: 26px;
+    color: #39b9da;
 }
 
 .mobile-menu {
     display: none;
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 760px) {
     .nav-bar {
         padding: 1.5rem 4rem;
     }
@@ -242,7 +249,7 @@ header {
     margin-bottom: 70px;
 }
   
-@media (max-width: 884px) {
+@media (max-width: 760px) {
     .container {
       margin-top: 10px;
       flex-direction: column;
