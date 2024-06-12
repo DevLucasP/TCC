@@ -37,7 +37,7 @@
 /* Smooth scroll */
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 30px;
+    scroll-padding-top: 58px;
 }
 
 /* Geral */
@@ -61,6 +61,7 @@ section {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 /* Header */
@@ -75,13 +76,6 @@ header {
     box-shadow: 0px 3px 10px #464646;
 }
 
-.nav-bar {
-    display: flex;
-    height: 90px;
-    padding: 1.5rem 6rem;
-    justify-content: space-between;
-}
-
 .logo {
     display: flex;
     align-items: center;
@@ -91,8 +85,15 @@ header {
     color: #ffffff;
 }
 
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
 .nav-list {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -109,13 +110,13 @@ header {
 .nav-link {
     text-decoration: none;
     font-size: 1.15rem;
-    color: #ffffff;
+    color: #fff;
     font-weight: 400;
 }
 
 .login-button button {
     border: none;
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 5px;
     background-color: #0187a7;
 }
@@ -129,10 +130,6 @@ header {
 
 .mobile-menu-icon {
     display: none;
-}
-
-.mobile-menu-icon i {
-    font-size: 26px;
 }
 
 .mobile-menu {
@@ -149,6 +146,10 @@ header {
     .login-button {
         display: none;
     }
+    .mobile-menu {
+        background: #353538;
+        border-top: 1px solid #000;
+    }
     .mobile-menu-icon {
         display: block;
     }
@@ -158,7 +159,7 @@ header {
         cursor: pointer;
     }
     .mobile-menu ul {
-        display: flex;
+        display: grid;
         flex-direction: column;
         text-align: center;
         padding-bottom: 1rem;
@@ -177,7 +178,12 @@ header {
     .open {
         display: block;
     }
-
+    .nav-link::after {
+        display: none;
+    }
+    .nav-link:hover::after {
+        display: none;
+    }
 }
 
 .nav-link::after {
@@ -220,7 +226,7 @@ header {
     z-index: 1;
   }
 
-.container {
+.container-hero {
     padding: 90px 0 40px 0;
     position: absolute;
     z-index: 994;
@@ -276,19 +282,7 @@ header {
     }
 }
 
-.p {
-    color: var(--blue);
-}
-
-.q {
-    color: var(--yellow);
-}
-
-.e {
-    color: var(--red);
-}
-
-/* Top Button*/
+/* Progress Button*/
 #progress {
     position: fixed;
     z-index: 99;
@@ -316,60 +310,19 @@ header {
 }
 
 /* Sobre */
-#sobre {
-    padding: 69px 30px 5% 30px;
-    margin-bottom: 90px;
-    height: 590px;
+#about {
+    padding: 69px 30px 0 30px;
 }
 
-#sobre h2 {
+#about h2 {
     font-size: 32px;
     font-weight: bold;
     padding: 6px 0 0 20px;
     position: relative;
+    color: #173b6c;
 }
 
-#sobre h2::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 3px;
-    height: 50px;
-    background: #a82121;
-    margin-bottom: 9px;
-    left: 0;
-    top: 0;
-}
-
-#sobre p {
-    text-indent: 20px;
-    text-align: justify;
-    font-size: 20px;
-    margin: 2px 8px 8px 8px;
-}
-
-#sobre img {
-    width: 275px;
-    height: 183px;
-    border-radius: 5px;
-    margin-left: 500px;
-}
-
-/* Causas */
-#causas {
-    padding: 69px 30px 5% 30px;
-    margin-bottom: 90px;
-    height: 590px;
-}
-
-#causas h2 {
-    font-size: 32px;
-    font-weight: bold;
-    padding: 6px 0 0 20px;
-    position: relative;
-}
-
-#causas h2::after {
+#about h2::after {
     content: "";
     position: absolute;
     display: block;
@@ -381,85 +334,119 @@ header {
     top: 0;
 }
 
-#causas p {
+#about .paragraph-up, .paragraph-down {
     text-indent: 20px;
     text-align: justify;
     font-size: 20px;
-    margin: 20px 8px 8px 8px;
+    margin: 20px 8px;
 }
 
-.causas-img {
-    width: 100%;
-    height: 370px;
-    margin: 18px 8px;
+.paragraph-down strong {
+    color: #d35216;
+    text-decoration: underline;
 }
 
-/* Graus*/
-#graus {
-    padding: 69px 30px 5% 30px;
-    margin-bottom: 90px;
-    height: 590px;
+#about img {
+    width: 275px;
+    height: 183px;
+    border-radius: 5px;
+    margin-left: 500px;
 }
 
-#graus h2 {
+/* Causas */
+#causes {
+    padding: 69px 30px;
+    background: #f1f4f8;
+}
+
+#causes h2 {
     font-size: 32px;
     font-weight: bold;
     padding: 6px 0 0 20px;
     position: relative;
+    color: #173b6c;
 }
 
-#graus h2::after {
+#causes h2::after {
     content: "";
     position: absolute;
     display: block;
     width: 3px;
     height: 50px;
-    background: #15dffa;
+    background: #e61313;
     margin-bottom: 9px;
     left: 0;
     top: 0;
 }
 
-/* Graus*/
-.container-graus {
+.flex {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.flex img {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    padding: 0 5px 5px 0;
+}
+
+.flex p {
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+/* levels*/
+#levels {
+    padding: 48px 30px;
+    height: 590px;
+}
+
+#levels h2 {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 6px 0 20px 3px;
+    text-align: center;
+    position: relative;
+    color: #173b6c;
+}
+
+#levels h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 3px;
+    margin-left: 46.3%;
+    background: #e61313;
+    bottom: 0;
+    left: 0;
+}
+
+.levels {
     margin: 40px 10px;
     display: grid;
     gap: 20px;
 }
 
-.nvl-1 {
+.lvl {
     background-color: #1081ece3;
     justify-content: center;
     border-radius: 15px;
     padding: 22px;
     width: 100%;
+    cursor: pointer;
 }
 
-.nvl-2 {
-    background-color: #1081ece3;
-    justify-content: center;
-    border-radius: 15px;
-    padding: 22px;
-    width: 100%;
-}
-
-.nvl-3 {
-    background-color: #1081ece3;
-    justify-content: center;
-    border-radius: 15px;
-    padding: 22px;
-    width: 100%;
-}
-
-.nvl-3 h3,
-.nvl-2 h3,
-.nvl-1 h3 {
+.lvl h3 {
     color: var(--white-color);
 }
 
-.nvl-3 p,
-.nvl-2 p,
-.nvl-1 p {
+.lvl p {
     text-indent: 20px;
     text-align: justify;
     color: var(--white-color);
@@ -467,17 +454,7 @@ header {
     margin: 8px 8px 8px 8px;
 }
 
-.text-1:hover {
-    transform: scale(1.01);
-    transition: 1.3s;
-}
-
-.text-2:hover {
-    transform: scale(1.01);
-    transition: 1.3s;
-}
-
-.text-3:hover {
+.text-lvl:hover {
     transform: scale(1.01);
     transition: 1.3s;
 }
