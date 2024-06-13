@@ -1,2 +1,1 @@
-# TCC
- https://devlucasp.github.io/TCC/index.html
+Site: https://devlucasp.github.io/TCC/index.html
