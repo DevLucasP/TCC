@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!--Links-->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/7148/7148801.png" type="image/x-icon">
@@ -11,11 +13,9 @@
     <title>Peças Que Encaixam - PQE</title>
 </head>
 <body>
-    <header>
+    <header id="header" class="header">
         <nav class="nav-bar">
-            <div class="logo">
-                <a href="#"><h1>PqE<span style="color: #a71113;">.</span></h1></a>
-            </div>
+            <a class="logo" href="index.html"><h1>PqE<span>.</span></h1></a>
             <div class="nav-list">
                 <ul>
                     <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
@@ -48,21 +48,20 @@
     <div id="progress">
         <span id="progress-value">&#x1F815;</span>
     </div><!--End Progress-->
-    
-    <section id="hero">
-        <div class="container-hero">
-            <img src="assets/img/logo.png" alt="">
-            <div class="hero-text">
-              <h2><span style="color: var(--blue);">Peças</span> <span style="color: var(--yellow);">Que</span> <span style="color: var(--red);">Emcaixam</span></h2>
-              <p>Descubra conosco o mundo fascinante e único do autismo. Navegue por artigos, recursos e histórias inspiradoras que 
-                iluminam as nuances deste espectro diverso. Da compreensão à aceitação, estamos aqui para promover uma comunidade informada 
-                e empática. Junte-se a nós na jornada de compreensão e apoio ao autismo - porque cada voz, cada história, importa.
-              </p>
-            </div>
-        </div>
-    </section><!--Fim Hero-->
 
     <main id="main">
+        <section id="hero" class="hero">
+            <div class="container-hero">
+                <img class="logo" src="assets/img/logo.png" alt="">
+                <div class="hero-text">
+                  <h1><span style="color: #168ac0;">Peças</span> <span style="color: var(--yellow);">Que</span> <span style="color: var(--red);">Emcaixam</span></h1>
+                  <p>Descubra tudo sobre o autismo: informações, diagnósticos e apoio para famílias e profissionais. 
+                    Aprenda mais sobre o espectro autista e como promover a inclusão.
+                  </p>
+                </div>
+            </div>
+        </section><!--Fim Hero-->
+
         <section id="about" class="about">
             <div class="container-about">
                 <h2>Transtorno do Espectro Autista (TEA)</h2>
@@ -103,46 +102,26 @@
         </section><!--Fim Causas-->
 
         <section id="levels" class="levels">
+            <h2>Níveis</h2>
             <div class="container-levels">
-                    <h2>Graus</h2>
-                    <div class="levels">
-                        <div class="lvl">
-                            <div class="text-lvl">
-                                <h3>Nível 3: severo (necessitam de maior suporte/apoio)</h3>
-                                <p>
-                                    Diz respeito àqueles que apresentam um déficit considerado grave nas habilidades de comunicação verbais e não verbais.
-                                    Ou seja, não conseguem se comunicar sem contar com suporte. Com isso apresentam dificuldade nas interações sociais e tem 
-                                    cognição reduzida.Também possuem um perfil inflexível de comportamento, tendo dificuldade de lidar com mudanças.Tendem ao 
-                                    isolamento social, se não estimulados.
-                                </p>
-                            </div>
+                <div class="thermometer">
+                    <div class="escala">
+                        <div class="low">
+                            <h1>Leve</h1>
+
                         </div>
-                        <div class="lvl">
-                            <div class="text-lvl">
-                                <h3>Nível 2: moderado (necessitam de suporte)</h3>
-                                <p>
-                                    Semelhante às características descritas no nível 3, mas com menor intensidade no que cabe aos transtornos de comunicação 
-                                    e deficiência de linguagem.
-                                </p>
-                            </div>
+                        <div class="middle">
+
                         </div>
-                        <div class="lvl">
-                            <div class="text-lvl">
-                                <h3>Nível 1: leve (necessita de pouco suporte)</h3>
-                                <p>
-                                    Com suporte, pode ter dificuldade para se comunicar, mas não é um limitante para interações sociais. Problemas de 
-                                    organização e planejamento impedem a independência.É importante saber que, embora estejam estabelecidos desta forma 
-                                    (níveis 1, 2 e 3), ainda não está bem claro de fato o que e sob quais circunstâncias pode ser compreendido o significado 
-                                    de “suporte”. Por exemplo: algumas pessoas com TEA desenvolvem bem em casa, mas precisam de ajuda na escola (onde as 
-                                    demandas são específicas e intensas). Outras pessoas o contrário.
-                                </p>
-                            </div> 
+                        <div class="high">
+
                         </div>
                     </div>
+                </div>
             </div>
         </section><!--Fim Levels-->
     </main>
         
-    <script src="assets/js/script.js"></script>
 </body>
+    <script src="assets/js/script.js"></script>
 </html>

@@ -50,3 +50,8 @@ let calcScrollValue = () => {
   };
   window.onscroll = calcScrollValue;
   window.onload = calcScrollValue;
+
+/* Animation */
+window.sr = ScrollReveal({ reset: true });
+
+sr.reveal('.container-hero', { duration: 2000,});               
