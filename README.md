@@ -1,1 +1,1 @@
-Site: https://DevLucasP.github.io/TCC/index.html/
+Site: http://DevLucasP.github.io/TCC/index.html/
