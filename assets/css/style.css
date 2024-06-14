@@ -268,10 +268,6 @@ a {
     width: 750px;
     height: 100%;
 }
-
-.container-hero {
-    visibility: hidden;
-}
   
 .hero-text h1 {
     margin: 0;
@@ -353,15 +349,15 @@ a {
     padding: 69px 30px 0 30px;
 }
 
-#about h2 {
+#about h1 {
     font-size: 32px;
     font-weight: bold;
     padding: 6px 0 0 20px;
     position: relative;
-    color: #173b6c;
+    color: #362b2b;
 }
 
-#about h2::after {
+#about h1::after {
     content: "";
     position: absolute;
     display: block;
@@ -377,7 +373,15 @@ a {
     text-indent: 20px;
     text-align: justify;
     font-size: 20px;
-    margin: 20px 8px;
+    margin: 20px 8px
+}
+
+.paragraph-up {
+    padding-top: 26px;
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 20px;
+    margin: 20px 8px
 }
 
 .paragraph-down strong {
@@ -398,15 +402,15 @@ a {
     background: #f1f4f8;
 }
 
-#causes h2 {
+#causes h1 {
     font-size: 32px;
     font-weight: bold;
     padding: 6px 0 0 20px;
     position: relative;
-    color: #173b6c;
+    color: #362b2b;
 }
 
-#causes h2::after {
+#causes h1::after {
     content: "";
     position: absolute;
     display: block;
@@ -418,25 +422,54 @@ a {
     top: 0;
 }
 
-.flex {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-}
-
-.flex img {
-    width: 300px;
-    height: 300px;
-    margin: 20px;
-    padding: 0 5px 5px 0;
-}
-
-.flex p {
+.research {
+    padding-top: 26px;
     text-indent: 20px;
     text-align: justify;
     font-size: 20px;
+    margin: 20px 8px;
+}
+
+.genetic {
+    padding-top: 26px;
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 20px;
+    margin: 20px 8px;
+}
+
+.environmental {
+    padding-top: 26px;
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 20px;
+    margin: 20px 8px;
+}
+
+.genetic h3 {
+    position: relative;
+    padding: 6px 0;
+    color: #173b6c;
+}
+
+.genetic p {
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 20px;
+    margin: 20px 8px;
+}
+
+.environmental h3 {
+    position: relative;
+    padding: 6px 0;
+    color: #173b6c;
+}
+
+.environmental p {
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 20px;
+    margin: 20px 8px;
 }
 
 /* levels*/
@@ -444,16 +477,16 @@ a {
     padding: 48px 30px;
 }
 
-#levels h2 {
+#levels h1 {
     font-size: 32px;
     font-weight: bold;
     padding: 6px 0 10px 3px;
     text-align: center;
     position: relative;
-    color: #173b6c;
+    color: #362b2b;
 }
 
-#levels h2::after {
+#levels h1::after {
     content: "";
     position: absolute;
     display: block;
@@ -469,44 +502,6 @@ a {
     margin-top: 100px;
 }
 
-.thermometer {
-    width: 50px;
-    height: 600px;
-    background: linear-gradient(to top, red, yellow, green);
-    border-radius: 25px;
-    border: 1px solid #000;
-    position: relative;
-}
-
-.thermometer .escala {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.escala .low {
-    border-bottom: 1px solid #000000;
-    width: 80px;
-}
-
-
-.low h1 {
-    margin-left: 100px;
-}
-
-.low p {
-    margin-left: 100px;
-}
-
-.escala .middle {
-    border-bottom: 1px solid #000000;
-    width: 80px;
-}
-
-.escala .high {
-    border-bottom: 1px solid #000000;
-    width: 80px;
+.low {
+    display: grid;
 }
