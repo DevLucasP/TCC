@@ -492,16 +492,38 @@ a {
     display: block;
     width: 100px;
     height: 3px;
-    margin-left: 46.2%;
+    margin-left: 45.9%;
     background: #e61313;
     bottom: 0;
     left: 0;
 }
 
 .container-levels {
-    margin-top: 100px;
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 20px;
+    margin: 60px 8px;
 }
 
 .low {
-    display: grid;
+    margin-bottom: 70px;
+}
+
+.middle {
+    margin-bottom: 50px;
+}
+
+.low h2 {
+    padding: 20px;
+    color: #173b6c;
+}
+
+.middle h2 {
+    padding: 20px;
+    color: #173b6c;
+}
+
+.high h2 {
+    padding: 20px;
+    color: #173b6c;
 }
