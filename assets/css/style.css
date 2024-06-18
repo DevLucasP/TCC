@@ -203,21 +203,21 @@ a {
     height: 2px;
     display: block;
     right: 0;
-    background: #e61313;
+    background: #ffffff;
     transition:  width 0.7s ease, bg-color 0.7s ease;
 }
 
 .nav-link:hover::after {
     width: 100%;
     left: 0;
-    background: #e61313;
+    background: #ffffff;
 }
 
 /* Hero Section */
 #hero {
     width: 100%;
     min-height: 60vh;
-    height: 100vh;
+    height: 890px;
     position: relative;
     padding: 60px 0;
     display: flex;
@@ -346,7 +346,8 @@ a {
 
 /* Sobre */
 #about {
-    padding: 69px 30px 0 30px;
+    padding: 69px 30px 60px 30px;
+    margin-bottom: 60px;
 }
 
 #about h1 {
@@ -394,6 +395,31 @@ a {
     height: 183px;
     border-radius: 5px;
     margin-left: 500px;
+}
+
+/* wave-header */
+.wave-header {
+    width: 100%;
+    min-height: 350px;
+    position: relative;
+}
+
+.wave-header svg  {
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.wave-about {
+    width: 100%;
+    min-height: 350px;
+    position: relative;
+}
+
+.wave-about svg  {
+    left: 0;
+    bottom: 0;
+    position: absolute;
 }
 
 /* Causas */
