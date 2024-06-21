@@ -1,2 +1,2 @@
 ## focaut
-https://DevLucasP.github.io/focaut/
+https://pratestech.github.io/focaut/
