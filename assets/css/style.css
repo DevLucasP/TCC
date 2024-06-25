@@ -92,7 +92,7 @@ a {
     position: fixed;
     background: #fff;
     width: 100%;
-    z-index: 997;
+    z-index: 996;
     color: #ffffff;
     background: #37373f;
     padding: 20px 0;
@@ -140,10 +140,17 @@ a {
 
 .mobile-menu-icon {
     display: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .mobile-menu {
     display: none;
+    position: fixed;
+    z-index: 995;
+    width: 100%;
+    padding-top: 80px;
 }
 
 @media screen and (max-width: 768px) {
@@ -282,7 +289,6 @@ a {
     font-size: 20px;
     font-weight: 400;
     color: #fff;
-    width: 79%;
 }
 
 @keyframes up-down {
@@ -298,22 +304,21 @@ a {
 @media (max-width: 768px) {
     .container-hero {
       flex-direction: column;
+      margin: 0;
+      padding: 0;
     }
-    .container-hero img {
-        height: 300px;
+    .container-hero .logo {
+        height: 290px;
+        width: 290px;
     }
     .hero-text {
-      width: 100%;
       text-align: center;
     }
     .hero-text h1 {
       font-size: 3rem;
     }
-}
-  
-@media (max-width: 678px) {
-    .hero-text h1 {
-      font-size: 2rem;
+    .p-hero {
+        text-align: center;
     }
 }
 
