@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Regular:ital,wght@0,400;0,700;1,400;1,700&family=Baloo+2:wght@400..800&display=swap');
 
 /*
     RESOLUÇÃO PC ESCOLA: 1920X1080
@@ -80,22 +81,18 @@ a {
     background: #fff;
     width: 100%;
     z-index: 996;
-    color: #ffffff;
-    background: #37373f;
+    color: #000000;
+    background: #ffffffdc;
     padding: 20px 0;
     transition: all 0.5s;
     box-shadow: 0 0 8px #8a8686;
 }
 
 .logo {
-    color: #fff;
+    color: #706868;
     font-size: 19px;
     margin: 5px 0;
     text-decoration: none;
-}
-
-.logo span {
-    color: #e41717;
 }
 
 .nav-list {
@@ -117,14 +114,16 @@ a {
 .nav-link {
     text-decoration: none;
     font-size: 1.15rem;
-    color: #ffffff;
-    font-weight: 400;
+    color: #000000;
+    cursor: pointer;
+    font-family: 'Baloo' sans-serif;
+    font-weight: 700;
 }
 
 .login-button button {
     border: none;
     width: 100px;
-    padding: 10px 15px;
+    padding: 10px;
     border-radius: 50px;
     background-color: #0187a7;
 }
@@ -201,27 +200,31 @@ a {
     }
 }
 
-.nav-link::after {
-    content: "";
-    position: relative;
-    width: 0;
-    height: 2px;
-    display: block;
-    right: 0;
-    background: #ffffff;
-    transition:  width 0.7s ease, bg-color 0.7s ease;
+#hero-header {
+    color: rgba(255, 152, 0, 1)
 }
 
-.nav-link:hover::after {
-    width: 100%;
-    left: 0;
-    background: #ffffff;
+#about-header {
+    color: rgba(65, 164, 249, 1)
+}
+
+#causes-header {
+    color: rgba(244, 143, 177, 1);
+}
+
+#levels-header {
+    color: #7a7676;
+    transition: 0.5s;
+}
+
+#levels-header:hover {
+    color: #2c2828;
 }
 
 /* Hero Section */
 #hero {
     width: 100%;
-    min-height: 90vh;
+    min-height: 94vh;
     position: relative;
     padding: 60px 0;
     display: flex;
@@ -247,65 +250,54 @@ a {
     position: absolute;
     z-index: 994;
     margin-left: 40px;
+    text-align: left;
     margin-right: 40px;
-    display: flex;
     background: transparent;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
 }
 
-.container-hero .logo {
-    animation: up-down 2.5s ease-in-out infinite alternate-reverse both;
-    width: 100%;
-    height: 100%;
+.more-button button {
+    font-size: 18px;
+    border: none;
+    width: 100px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    margin-left: 20px;
+    color: #fff;
+    background-color: #0187a7;
 }
   
 .hero-text h1 {
-    margin: 0;
-    width: 100%;
+    margin: 0 0 0 20px;
     font-size: 64px;
     font-weight: 700;
-    color: #00649c;
     font-family: 'Oswald', sans-serif;
 }
   
 .hero-text p {
-    margin: 5px 0 30px 0;
+    margin: 5px 50% 30px 0;
+    text-align: justify;
     font-size: 20px;
     font-weight: 400;
     color: #fff;
 }
-
-@keyframes up-down {
-    0% {
-      transform: translateY(10px);
-    }
-  
-    100% {
-      transform: translateY(-10px);
-    }
-}
   
 @media (max-width: 768px) {
     .container-hero {
-      flex-direction: column;
+      text-align: center;
       margin: 0;
       padding: 0;
     }
-    .container-hero .logo {
-        height: 290px;
-        width: 290px;
-    }
     .hero-text {
-      text-align: center;
+        text-align: center;
     }
+
+    .hero-text p {
+        margin: 10px 50px 0 50px;
+        text-align: center;
+    }
+      
     .hero-text h1 {
       font-size: 3rem;
-    }
-    .p-hero {
-        text-align: center;
     }
 }
 
@@ -339,7 +331,7 @@ a {
 /* Sobre */
 #about {
     padding: 40px 30px 60px 30px;
-    background: #ffefdf;
+    background: #fff;
 }
 
 #about h1 {
@@ -386,33 +378,17 @@ a {
     width: 275px;
     height: 183px;
     border-radius: 5px;
-    margin-left: 500px;
+    margin: 0 250px 0 250px;
 }
 
-/* wave-header */
-.wave-header {
-    width: 100%;
-    height: 10px;
-    z-index: 2;
-    position: relative;
-}
-
-.wave-header svg  {
-    left: 0;
-    bottom: 0;
-    position: absolute;
-}
-
-.wave-about {
-    width: 100%;
-    height: 30px;
-    position: relative;
-}
-
-.wave-about svg  {
-    left: 0;
-    bottom: 0;
-    position: absolute;
+@media (max-width: 768px) {
+    #about img {
+        margin: 0 50px 0 50px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+    }
 }
 
 /* Causas */
