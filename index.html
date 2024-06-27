@@ -4,15 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--Links-->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--Link's-->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/7148/7148801.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/7148/7148801.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    
+    <!--Script's-->
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
     <title>Focaut</title>
 </head>
+    <style>
+        @font-face {
+            font-family: 'chubby';
+            src: url('../font/CHUBBY.TTF') format('truetype');
+        }
+        
+        .nav-list li a{
+            font-family: 'chubby';
+        }
+    </style>
 <body>
     <header id="header" class="header">
         <nav class="nav-bar">
@@ -35,20 +48,16 @@
         </nav>
         <div class="mobile-menu">
             <ul>
-                <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">Sobre</a></li>
-                <li class="nav-item"><a href="#causes" class="nav-link">Causa</a></li>
-                <li class="nav-item"><a href="#levels" class="nav-link">Niveis</a></li>
+                <li class="nav-item"><a href="#hero" id="hero-header" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" id="about-header" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#causes" id="causes-header" class="nav-link">Causa</a></li>
+                <li class="nav-item"><a href="#levels" id="levels-header" class="nav-link">Niveis</a></li>
             </ul>
             <div class="login-button">
                 <button><a href="#">Contato</a></button>
             </div>
         </div>
     </header><!-- End Header -->
-
-    <div id="progress">
-        <span id="progress-value">&#x1F815;</span>
-    </div><!--End Progress-->
 
     <main id="main">
         <section id="hero" class="hero">
@@ -189,7 +198,15 @@
             </div>
         </section><!--Fim Levels-->
     </main><!--End Main-->
-        
+
+    <section id="Vlibras">
+        <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    </section><!--End VLibras-->
 </body>
-    <script src="assets/js/script.js"></script>
 </html>
